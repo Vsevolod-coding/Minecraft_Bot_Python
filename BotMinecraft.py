@@ -55,12 +55,12 @@ def spawn(*args):
                 bot.chat('Я тут!')
                 Time = 0
                 while Time < 6:
-                      # Смотрим на игрока
+                    # Смотрим на игрока
                     bot.lookAt(player.entity.position.offset(0, player.entity.height, 0))
                     time.sleep(0.5)
                     Time += 1
 
-attacked_mobs = {} #Словарь с мобами который были атакованы
+attacked_mobs = {} #Словарь с мобами которые были атакованы
 
 # Функция, которая будет сбрасывать записи о мобах из attacked_mobs через определенное время
 def reset_attacked_mobs():
@@ -87,7 +87,7 @@ def entityHurt(this, entity):
 
     elif entity.type == "player":
         if entity.username in bot.players:
-            bot.chat("Меня бъют")
+            bot.chat("Меня бьют")
 
 while True:
     pass
